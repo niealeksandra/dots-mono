@@ -1,0 +1,363 @@
+@import 'variables';
+
+
+#about {
+    margin: 0;
+    padding: 0px;
+
+
+    .abouth2 {
+        @include text;
+        margin: 2vh 50px 50px 15vw;
+        @include margin-left;
+    }
+
+    #aboutp {
+        @include paragraf;
+        margin: 100px 0px 50px 0px;
+    }
+
+    .font_style {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: $light;
+        padding: 2vh 0px 5vh 0px;
+
+        .button {
+            font-size: 12px;
+            padding: 8px 20px;
+            margin: 10px 0px;
+            width: 100px;
+            border-left: 1px solid $grey;
+            border-right: 1px solid $grey;
+            text-align: center;
+            line-height: 1.5;
+            transition: 300ms linear;
+            -webkit-transition: 300ms linear;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            border-left: 1px solid $banana;
+            border-right: 1px solid $banana;
+        }
+
+        .italic {
+            p {
+                font-family: $dotsItalic;
+                color: $grey;
+            }
+        }
+
+        .active {
+            border-left: 1px solid $banana;
+            border-right: 1px solid $banana;
+            p {
+                color: $banana;
+            }
+        }
+    }
+    #about_letters_item {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        #letters {
+            color: $light;
+            font-size: 40px;
+            text-align: center;
+            position: relative;
+            width: 600px;
+            .uppercase {
+                text-transform: uppercase;
+            }
+            .single_letter {
+                display: inline;
+                position: relative;
+            }
+    
+            .uppercase::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                height: 250%;
+                width: 1px;
+                background-color: $grey;
+            }
+            .uppercase::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                height: 250%;
+                width: 1px;
+                background-color: $grey;
+            }
+    
+            .minuscule::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                height: 120%;
+                width: 1px;
+                background-color: $grey;
+            }
+            .minuscule::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                height: 120%;
+                width: 1px;
+                background-color: $grey;
+            }
+        }
+    
+        .italic {
+            p {
+                font-family: $dotsItalic;
+            }
+        }
+    }
+
+    #about_example {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 12px;
+        margin: 100px 0%;
+        width: 100%;
+
+        .example_item {
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            border-left: 1px solid $grey;
+            border-right: 1px solid $grey;
+
+            .example-left {
+                p {
+                    margin: 5px;
+                    color: $grey;
+                    
+                    display: block;
+                }
+            }
+            .example-right {
+                p {
+                    margin: 5px 10px;
+                    color: $light;
+                }
+                .tab {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+
+    #about_from_author {
+        @include text;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        p {
+            @include ptext;
+            width: 600px;
+            text-align: left
+        }
+
+    }
+
+    #about_write {
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 50px;
+
+        textarea {
+            width: 600px;
+            border: 1px solid transparent;
+            border-bottom: 1px solid $grey;
+            border-top: 1px solid $grey;
+            background-color: $dark;
+            font-family: $dotsRegular;
+            color: $light;
+            font-size: 15px;
+            padding: 20px;
+            outline: none;
+            transition: 300ms linear;
+            -webkit-transition: 300ms linear;
+        }
+
+        textarea:focus {
+            border-top: 1px solid $banana;
+            border-bottom: 1px solid $banana;
+        }
+    }
+
+    #about_diacritics {
+        @include text;
+        font-size: 31px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2vh;
+        p {
+            width: 600px;
+            text-align: left;
+            margin-top: 40px;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 1024px) {
+   
+    #about {
+
+        .abouth2 {
+            @include text2;
+            margin: 2vh 50px 50px 10vw;
+            @include margin-left2;
+        }
+    
+        #aboutp {
+            @include paragraf2;
+            margin: 2vh 50px 50px 10vw;
+        }
+    
+        .font_style {
+    
+            .button {
+                font-size: 12px;
+            }
+
+        }
+        #about_letters_item {
+    
+            #letters {
+                font-size: 26px;
+                width: 400px;
+            }
+        }
+    
+        #about_example {
+            font-size: 12px;
+            margin-left: 15px;
+            margin-right: 15px;
+            width: auto;
+
+            .example_item {
+                width: 400px;
+    
+                .example-left {
+ 
+                }
+                .example-right {
+
+                }
+            }
+        }
+    
+        #about_from_author {
+            @include text2;
+            margin: 2vh 50px 50px 10vw;
+            p {
+                @include ptext2;
+            }
+        }
+    
+        #about_write {
+    
+            textarea {
+                width: 400px;
+                font-size: 15px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    
+        #about_diacritics {
+            @include text2;
+            font-size: 25px;
+            p {
+                width: 400px;
+                margin-top: 40px;
+            }
+        }
+    
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+   
+    #about {
+
+        .abouth2 {
+           font-size: 15px;
+        }
+    
+        #aboutp {
+            font-size: 15px;
+        }
+    
+        .font_style {
+    
+            .button {
+                font-size: 15px;
+            }
+
+        }
+        #about_letters_item {
+    
+            #letters {
+                font-size: 22px;
+                width: 200px;
+            }
+        }
+    
+        #about_example {
+            font-size: 8px;
+
+            .example_item {
+                width: 200px;
+    
+            }
+        }
+    
+        #about_from_author {
+            font-size: 15px;
+            p {
+                font-size: 15px;
+            }
+        }
+    
+        #about_write {
+    
+            textarea {
+                width: 200px;
+                font-size: 15px;
+            }
+        }
+    
+        #about_diacritics {
+            @include text2;
+            font-size: 15px;
+            p {
+                width: 200px;
+                margin-top: 40px;
+            }
+        }
+    
+    }
+    
+}

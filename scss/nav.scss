@@ -1,0 +1,83 @@
+    
+@import 'variables';
+
+
+
+    #nav_left {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        width: 50px;
+        top: 0;
+        z-index: 10;
+        height: 100vh;
+
+        #left {
+
+            height: 100%;
+
+            nav {
+                height: 100%;
+                padding: 25vh 0px;
+                ul {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    li { 
+                        position: relative;
+                      
+                        a {
+                            color: $banana;
+                            text-decoration: none;
+                            list-style: none;
+                            text-transform: uppercase;
+                            font-size: 11px;
+                            transition: 200ms linear;
+                            -webkit-transition: 200ms linear;
+                            position: absolute;
+                            animation: left 1s ease-in-out;
+                        }
+                    
+                        a:hover {
+                            color: $light;
+    
+                        }
+
+                        span {
+                            position: absolute;
+                            color: $banana;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            left: 55px;
+                            width: 85px;
+                            opacity: 0;
+                            transition: 200ms linear;
+                            -webkit-transition: 200ms linear;
+                        }
+                    }
+
+                    li:hover {
+                        span {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        #line {
+            height: 100%;
+            background-color: $banana;
+            position: absolute;
+            right: 0px;
+            top: 6vh;
+            width: 1px;
+        }
+    }

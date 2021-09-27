@@ -1,0 +1,266 @@
+@import 'variables';
+
+#install {
+    margin: 0;
+    padding: 0px;
+    // background: rgb(20,20,20);
+    // background: linear-gradient(180deg, rgb(8, 12, 17) 0%, rgb(6, 12, 15) 100%);
+    color: $light;
+
+
+    .install2 {
+        @include text;
+        margin: 2vh 50px 2vw 15vw;
+        @include margin-left;
+    }
+
+    .license_div {
+        @include paragraf;
+        margin: 2vh 0px 2vw 0vw;
+        @include margin-left;
+        position: relative;
+        justify-content: left;
+        padding-left: 50px;
+        flex-direction: column;
+        align-items: left;
+        padding-bottom: 50px;
+
+        p {
+            padding-top: 50px;
+            @include ptext;
+        }
+    }
+
+    .license_div::after {
+        content: '';
+        width: 1px;
+        background-color: $grey;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+    }
+
+    .install_div {
+        @include paragraf;
+        margin: 2vh 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+
+
+        .install_font_install {
+            width: 600px;
+            text-align: left;
+            padding-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 1vw;
+        }
+
+        .download_font_install {
+            font-size: 2vw;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            width: 600px;
+            text-align: left;
+            padding: 20px 0px;
+
+            a {
+                text-decoration: none;
+                color: $light;
+                border-top: 1px solid $grey;
+                border-bottom: 1px solid $grey;
+                width: 600px;
+                display: block;
+                padding: 20px 0px;
+                transition: 200ms linear;
+                -webkit-transition: 200ms linear;
+            }
+
+            a:hover {
+                border-bottom: 1px solid $banana;
+                border-top: 1px solid $banana;
+            }
+        }
+
+        .system_install {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 600px;
+
+            .left_install {
+                width: 30%;
+            }
+            .right_install {
+                width: 67%;
+            }
+            p {
+            
+                text-transform: uppercase;
+                font-size: 1vw;
+                padding-bottom: 30px;
+            }
+        }
+
+        .after_div {
+            position: relative;
+            margin-bottom: 45px;
+        }
+
+        .after_div::after {
+            content: '';
+            height: 1px;
+            width: 600px;
+            position: absolute;
+            bottom: 0px;
+            background-color: $grey;
+
+        }
+        
+    }
+
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    #install {
+
+        .install2 {
+            @include text2;
+            margin: 2vh 50px 2vw 10vw;
+            @include margin-left2;
+        }
+    
+        .license_div {
+            @include paragraf2;
+            @include margin-left2;
+            padding-left: 15px;
+            width: 400px;
+    
+            p {
+                padding-top: 50px;
+                @include ptext2;
+                width: 400px;
+            }
+        }
+
+        .license_div::after {
+            height: 90%;
+        }
+
+    
+        .install_div {
+            @include paragraf2;
+    
+    
+            .install_font_install {
+                width: 400px;
+                font-size: 3vw;
+            }
+    
+            .download_font_install {
+                font-size: 4vw;
+                width: 400px;
+    
+                a {
+                    width: 400px;
+                }
+            }
+    
+            .system_install {
+                width: 400px;
+    
+                .left_install {
+                    width: 30%;
+                }
+                .right_install {
+                    width: 67%;
+                }
+                p {
+
+                    font-size: 3vw;
+                }
+            }
+    
+            .after_div::after {
+                width: 400px;
+
+    
+            }
+            
+        }
+    
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+
+    #install {
+
+        .install2 {
+            font-size: 15px;
+        }
+    
+        .license_div {
+            width: 200px;
+            font-size: 15px;
+            p {
+                width: 200px;
+                font-size: 15px;
+            }
+        }
+
+        .license_div::after {
+            height: 90%;
+        }
+
+    
+        .install_div {
+    
+    
+            .install_font_install {
+                width: 200px;
+                font-size: 3vw;
+            }
+    
+            .download_font_install {
+                font-size: 4vw;
+                width: 200px;
+    
+                a {
+                    width: 200px;
+                }
+            }
+    
+            .system_install {
+                width: 200px;
+    
+                p {
+
+                    font-size: 3vw;
+                }
+            }
+    
+            .after_div::after {
+                width: 200px;
+
+    
+            }
+            
+        }
+    
+    }
+
+
+       
+
+}

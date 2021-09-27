@@ -1,0 +1,244 @@
+@import 'variables';
+
+#section_right {
+
+    background: rgb(30,30,30);
+    background: linear-gradient(90deg, rgb(15, 30, 32) 0%, rgb(20, 20, 20) 100%);
+    position: relative;
+    
+    #download_button {
+    
+        font-family: $dotsRegular;
+        background: linear-gradient(90deg, rgb(17, 23, 24) 0%, rgb(20, 20, 20) 100%);
+        color: $banana;
+        position: fixed;
+        text-transform: uppercase;
+        opacity: 1;
+        transition: 200ms linear;
+        -webkit-transition: 200ms linear;
+        width: 150px;
+        height: 60px;
+        border: 1px solid transparent;
+        border-left: 1px solid $banana;
+        right: 0;
+        bottom: 60px;
+        z-index: 20;
+        outline: none;
+
+      }
+    
+      #download_button:hover {
+          cursor: pointer;
+          opacity:0.6;
+      }
+
+      #download_button:focus {
+        border: 1px solid transparent;
+        border-left: 1px solid $banana;
+        outline: none;
+    }
+
+    
+    header {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0px;
+        position: relative;
+    
+        #fridayp {
+            font-family: $dotsRegular;
+            font-size: 20px;
+            padding: 2vh 2vw 2vh 0vw;
+            margin: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            a {
+
+                text-decoration: none;
+                color: $light;
+            }
+
+            a:hover {
+                color: $banana;
+            }
+            transition: 200ms linear;
+            -webkit-transition: 200ms linear;
+        }
+
+        h1#header1 {
+            font-family: $dotsRegular;
+            font-size: 6vw;
+            line-height: 1.5;
+            text-align: left;
+            color: $light;
+            padding: 15vh 50px 0vh 0px;
+            @include margin-left;
+        }
+
+        h2.header2 {
+            font-family: $dotsRegular;
+            @include ptext;
+            text-align: left;
+            color: $light;
+            margin-left: 20vw;
+            padding: 14vh 50px 14vh 20px;
+            @include margin-left;
+            // text-transform: uppercase;
+            border-left: 1px solid $grey;
+        }
+    
+
+        p.header_info_download, 
+        p.header_info_license {
+            padding: 2vh 50px 0vh 0px;
+            @include margin-left;
+            a {
+                text-decoration: none;
+                color: $light;
+                text-transform: uppercase;
+                font-size: 1vw;
+                transition: 200ms linear;
+                -webkit-transition: 200ms linear;
+            }  
+            a:hover {
+                cursor: pointer;
+                color: $banana;
+            }
+        }
+        .line_sections {
+            height: 45vh;
+            width: 1px;
+            background-color: $grey;
+            left: 0px;
+            margin: 2vh 0px 0px 20vw;
+            @include margin-left;
+        }
+    
+    }
+
+}
+
+
+// media query
+
+@media (max-width: 1024px) {
+    #section_right {
+        
+        #download_button {
+          }
+        
+        header {
+        
+            #fridayp {
+                font-size: 20px;
+                background-color: $dark;
+            }
+    
+            h1#header1 {
+                font-size: 10vw;
+                padding: 10vh 50px 0vh 0px;
+                @include margin-left2;
+                line-height: 1;
+            }
+    
+            h2.header2 {
+                margin-left: 10vw;
+                padding: 10vh 50px 14vh 20px;
+                @include margin-left2;
+                @include ptext2;
+            }
+        
+    
+            p.header_info_download, 
+            p.header_info_license {
+                @include margin-left2;
+                a {
+                    font-size: 3vw;
+                }  
+            }
+            .line_sections {
+                height: 30vh;
+                @include margin-left2;
+            }
+        
+        }
+    
+    }
+    
+}
+
+
+
+@media (max-width: 900px) {
+    #section_right {
+        
+        #download_button {
+          }
+        
+        header {
+        
+            #fridayp {
+                font-size: 15px;
+            }
+    
+            h1#header1 {
+            }
+    
+            h2.header2 {
+            }
+        
+    
+            p.header_info_download, 
+            p.header_info_license {
+                @include margin-left2;
+                a {
+                    font-size: 4vw;
+                }  
+            }
+            .line_sections {
+            }
+        
+        }
+    
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #section_right {
+        
+        #download_button {
+          }
+        
+        header {
+        
+            #fridayp {
+                font-size: 15px;
+            }
+    
+            h1#header1 {
+            }
+    
+            h2.header2 {
+
+                font-size: 20px;
+            }
+        
+    
+            p.header_info_download, 
+            p.header_info_license {
+                @include margin-left2;
+                a {
+                    font-size: 4vw;
+                }  
+            }
+            .line_sections {
+            }
+        
+        }
+    
+    }
+    
+}

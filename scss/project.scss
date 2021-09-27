@@ -1,0 +1,329 @@
+@import 'variables';
+
+#project {
+    margin: 0;
+    padding: 0px;
+    color: $light;
+
+    .project2 {
+        @include text;
+        margin: 2vh 50px 50px 15vw;
+        @include margin-left;
+    }
+
+    #project_from_author {
+        @include paragraf;
+        margin: 2vh 0px 100px 0px;
+        p {
+            font-size: 1.2vw;
+            line-height: 1.7;
+
+        }
+    }
+    
+    #project_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .project_class {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px;
+            // border-bottom: 1px solid $grey;
+            width: 600px;
+    
+            .project_left {
+                width: 48%;
+                line-height: 1.5;
+                .h2project {
+                    font-size: 20px;
+                    // text-transform: uppercase;
+                    margin: 20px 0px;
+                }
+                .pproject {
+                    font-size: 12px;
+    
+                }
+                .line_left_project {
+                    height: 100px;
+                    width: 1px;
+                    background-color: $grey;
+                    left: 0px;
+                    margin: 2vh 0px 0px 0px;
+                }
+            }
+    
+            .project_right {
+    
+                width: 48%;
+                text-align: right;
+                .project_letter {
+                    font-size: 160px;
+                    margin: 0;
+                    display: inline;
+                    padding: 7px 0px;
+                }
+            }
+
+        }
+
+        .project_class2 {
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            padding: 0px;
+            // border-bottom: 1px solid $grey;
+            width: 600px;
+            .pproject {
+                font-size: 12px;
+                line-height: 1.5;
+
+            }
+
+            .line_left_project {
+                height: 100px;
+                width: 1px;
+                background-color: $grey;
+                left: 0px;
+                margin: 2vh 0px 0px 0px;
+            }
+
+            .letters_horizontal {
+                width: 600px;
+                justify-content: left;
+                .project_letter {
+                    font-size: 160px;
+                    width: 600px;
+                    margin: 0;
+                    display: block;
+                    padding: 7px 0px;
+                    position: relative;
+                    text-align: left;
+                }
+                .let03::before {
+                    @include let;
+                    bottom: 76px;
+
+                }
+                .let03::after {
+                    @include let;
+                    bottom: 106px;
+                }
+
+                .let04::before {
+                    @include let;
+                    bottom: 55px;
+                }
+                .let04::after {
+                    @include let;
+                    bottom: 144px;
+                }
+
+                .let08::before {
+                    @include let;
+                    bottom: 55px;
+                }
+                .let08::after {
+                    @include let;;
+                    bottom: 173px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    #project {
+    
+        .project2 {
+            @include text2;
+            @include margin-left2;
+        }
+    
+        #project_from_author {
+            @include paragraf2;
+            p {
+                font-size: 3vw;
+                line-height: 1.7;
+    
+            }
+        }
+        
+        #project_section {
+    
+            .project_class {
+                width: 400px;
+        
+                .project_left {
+
+                    .h2project {
+                        font-size: 15px;
+                        margin: 10px 0px;
+                    }
+                    .pproject {
+                        font-size: 12px;
+                        
+                    }
+                    .line_left_project {
+                    }
+                }
+        
+                .project_right {
+
+                    .project_letter {
+                        font-size: 100px;
+                    }
+                }
+    
+            }
+    
+            .project_class2 {
+                width: 400px;
+                .pproject {
+                }
+    
+                .line_left_project {
+                }
+    
+                .letters_horizontal {
+                    width: 400px;
+                    .project_letter {
+                        font-size: 100px;
+                        width: 400px;
+                    }
+                    .let03::before {
+                        @include let;
+                        bottom: 50px;
+    
+                    }
+                    .let03::after {
+                        @include let;
+                        bottom: 69px;
+                    }
+    
+                    .let04::before {
+                        @include let;
+                        bottom: 37px;
+                    }
+                    .let04::after {
+                        @include let;
+                        bottom: 92px;
+                    }
+    
+                    .let08::before {
+                        @include let;
+                        bottom: 37px;
+                    }
+                    .let08::after {
+                        @include let;;
+                        bottom: 112px;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    #project {
+    
+        .project2 {
+            font-size: 15px;
+        }
+    
+        #project_from_author {
+            font-size: 15px;
+            p {
+                font-size: 15px;
+    
+            }
+        }
+        
+        #project_section {
+    
+            .project_class {
+                width: 200px;
+        
+                .project_left {
+
+                    .h2project {
+                        font-size: 15px;
+                        margin: 10px 0px;
+                    }
+                    .pproject {
+                        font-size: 12px;
+                        
+                    }
+                    .line_left_project {
+                    }
+                }
+        
+                .project_right {
+
+                    .project_letter {
+                        font-size: 50px;
+                    }
+                }
+    
+            }
+    
+            .project_class2 {
+                width: 200px;
+                .pproject {
+                }
+    
+                .line_left_project {
+                }
+    
+                .letters_horizontal {
+                    width: 200px;
+                    .project_letter {
+                        font-size: 50px;
+                        width: 200px;
+                    }
+                    .let03::before {
+                        @include let;
+                        bottom: 22px;
+    
+                    }
+                    .let03::after {
+                        @include let;
+                        bottom: 39px;
+                    }
+    
+                    .let04::before {
+                        @include let;
+                        bottom: 23px;
+                    }
+                    .let04::after {
+                        @include let;
+                        bottom: 51px;
+                    }
+    
+                    .let08::before {
+                        @include let;
+                        bottom: 22px;
+                    }
+                    .let08::after {
+                        @include let;
+                        bottom: 61px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

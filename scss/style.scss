@@ -1,0 +1,107 @@
+@import 'variables';
+@import 'header';
+@import 'about';
+@import 'project';
+@import 'nav';
+@import 'install';
+
+* {
+    box-sizing: border-box;  
+    font-family: $dotsRegular;
+    margin:0;
+    padding:0
+}
+
+body {
+    margin: 0px;
+    background-color: $dark;
+    position: relative;
+
+    #section_right {
+        margin-left: 50px;
+    }
+}
+
+h1 {
+    margin: 0;
+}
+
+.opacity_fridayp {
+    opacity: 0;
+}
+ 
+.line_sections {
+    height: 45vh;
+    width: 1px;
+    background-color: $grey;
+    left: 0px;
+    margin: 2vh 0px 0px 150px
+}
+
+.line_left {
+    height: 5vh;
+    width: 1px;
+    background-color: $grey;
+    left: 0px;
+    margin: 0;
+    @include margin-left;
+}
+
+.italic {
+    font-family: $dotsItalic;
+}
+
+.span_install {
+    text-transform: none;
+    font-size: 1.5vw;
+}
+
+#footer {
+    background-color: $dark;
+    color: $grey;
+    padding: 15px 15vw;
+
+
+    p {
+        font-size: 10px;
+        font-family: $dotsRegular;
+        text-align: left;
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $back; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(251, 220, 116, 0.6); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(251, 220, 116, 1);
+  }
+
+
+  @media (max-width: 1024px) {
+    .line_left {
+        @include margin-left2;
+    }
+
+    .line_sections {
+        height: 25vh;
+        width: 1px;
+        background-color: $grey;
+        left: 0px;
+        margin: 2vh 0px 0px 50px
+    }
+    
+}

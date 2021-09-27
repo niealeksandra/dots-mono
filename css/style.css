@@ -1,0 +1,1115 @@
+@font-face {
+  font-family: "dotsRegular";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-regular.otf") format("truetype"), url("../font/Fridaymono-regular.woff") format("woff"), url("../font/Fridaymono-regular.woff2") format("woff2"), url("../font/Fridaymono-regular.eot") format("embedded-opentype"); }
+@font-face {
+  font-family: "dotsItalic";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-italic.woff2") format("woff2"), url("../font/Fridaymono-italic.eot") format("embedded-opentype"); }
+@keyframes left {
+  0% {
+    left: -130px; }
+  100% {
+    left: 20px; } }
+@font-face {
+  font-family: "dotsRegular";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-regular.otf") format("truetype"), url("../font/Fridaymono-regular.woff") format("woff"), url("../font/Fridaymono-regular.woff2") format("woff2"), url("../font/Fridaymono-regular.eot") format("embedded-opentype"); }
+@font-face {
+  font-family: "dotsItalic";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-italic.woff2") format("woff2"), url("../font/Fridaymono-italic.eot") format("embedded-opentype"); }
+@keyframes left {
+  0% {
+    left: -130px; }
+  100% {
+    left: 20px; } }
+#section_right {
+  background: #1e1e1e;
+  background: linear-gradient(90deg, #0f1e20 0%, #141414 100%);
+  position: relative; }
+  #section_right #download_button {
+    font-family: "dotsRegular";
+    background: linear-gradient(90deg, #111718 0%, #141414 100%);
+    color: #fbdc74;
+    position: fixed;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: 200ms linear;
+    -webkit-transition: 200ms linear;
+    width: 150px;
+    height: 60px;
+    border: 1px solid transparent;
+    border-left: 1px solid #fbdc74;
+    right: 0;
+    bottom: 60px;
+    z-index: 20;
+    outline: none; }
+  #section_right #download_button:hover {
+    cursor: pointer;
+    opacity: 0.6; }
+  #section_right #download_button:focus {
+    border: 1px solid transparent;
+    border-left: 1px solid #fbdc74;
+    outline: none; }
+  #section_right header {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    position: relative; }
+    #section_right header #fridayp {
+      font-family: "dotsRegular";
+      font-size: 20px;
+      padding: 2vh 2vw 2vh 0vw;
+      margin: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      transition: 200ms linear;
+      -webkit-transition: 200ms linear; }
+      #section_right header #fridayp a {
+        text-decoration: none;
+        color: white; }
+      #section_right header #fridayp a:hover {
+        color: #fbdc74; }
+    #section_right header h1#header1 {
+      font-family: "dotsRegular";
+      font-size: 6vw;
+      line-height: 1.5;
+      text-align: left;
+      color: white;
+      padding: 15vh 50px 0vh 0px;
+      margin-left: 150px; }
+    #section_right header h2.header2 {
+      font-family: "dotsRegular";
+      font-size: 1.2vw;
+      line-height: 1.7;
+      text-align: left;
+      color: white;
+      margin-left: 20vw;
+      padding: 14vh 50px 14vh 20px;
+      margin-left: 150px;
+      border-left: 1px solid #5e5d5d; }
+    #section_right header p.header_info_download,
+    #section_right header p.header_info_license {
+      padding: 2vh 50px 0vh 0px;
+      margin-left: 150px; }
+      #section_right header p.header_info_download a,
+      #section_right header p.header_info_license a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1vw;
+        transition: 200ms linear;
+        -webkit-transition: 200ms linear; }
+      #section_right header p.header_info_download a:hover,
+      #section_right header p.header_info_license a:hover {
+        cursor: pointer;
+        color: #fbdc74; }
+    #section_right header .line_sections {
+      height: 45vh;
+      width: 1px;
+      background-color: #5e5d5d;
+      left: 0px;
+      margin: 2vh 0px 0px 20vw;
+      margin-left: 150px; }
+
+@media (max-width: 1024px) {
+  #section_right header #fridayp {
+    font-size: 20px;
+    background-color: #141414; }
+  #section_right header h1#header1 {
+    font-size: 10vw;
+    padding: 10vh 50px 0vh 0px;
+    margin-left: 50px;
+    line-height: 1; }
+  #section_right header h2.header2 {
+    margin-left: 10vw;
+    padding: 10vh 50px 14vh 20px;
+    margin-left: 50px;
+    font-size: 3vw;
+    line-height: 2; }
+  #section_right header p.header_info_download,
+  #section_right header p.header_info_license {
+    margin-left: 50px; }
+    #section_right header p.header_info_download a,
+    #section_right header p.header_info_license a {
+      font-size: 3vw; }
+  #section_right header .line_sections {
+    height: 30vh;
+    margin-left: 50px; } }
+@media (max-width: 900px) {
+  #section_right header #fridayp {
+    font-size: 15px; }
+  #section_right header p.header_info_download,
+  #section_right header p.header_info_license {
+    margin-left: 50px; }
+    #section_right header p.header_info_download a,
+    #section_right header p.header_info_license a {
+      font-size: 4vw; } }
+@media (max-width: 600px) {
+  #section_right header #fridayp {
+    font-size: 15px; }
+  #section_right header h2.header2 {
+    font-size: 20px; }
+  #section_right header p.header_info_download,
+  #section_right header p.header_info_license {
+    margin-left: 50px; }
+    #section_right header p.header_info_download a,
+    #section_right header p.header_info_license a {
+      font-size: 4vw; } }
+@font-face {
+  font-family: "dotsRegular";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-regular.otf") format("truetype"), url("../font/Fridaymono-regular.woff") format("woff"), url("../font/Fridaymono-regular.woff2") format("woff2"), url("../font/Fridaymono-regular.eot") format("embedded-opentype"); }
+@font-face {
+  font-family: "dotsItalic";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-italic.woff2") format("woff2"), url("../font/Fridaymono-italic.eot") format("embedded-opentype"); }
+@keyframes left {
+  0% {
+    left: -130px; }
+  100% {
+    left: 20px; } }
+#about {
+  margin: 0;
+  padding: 0px; }
+  #about .abouth2 {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    margin: 2vh 50px 50px 15vw;
+    margin-left: 150px; }
+  #about #aboutp {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 50px 50px 15vw;
+    margin: 100px 0px 50px 0px; }
+    #about #aboutp p {
+      width: 600px;
+      text-align: left; }
+  #about .font_style {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    padding: 2vh 0px 5vh 0px; }
+    #about .font_style .button {
+      font-size: 12px;
+      padding: 8px 20px;
+      margin: 10px 0px;
+      width: 100px;
+      border-left: 1px solid #5e5d5d;
+      border-right: 1px solid #5e5d5d;
+      text-align: center;
+      line-height: 1.5;
+      transition: 300ms linear;
+      -webkit-transition: 300ms linear; }
+    #about .font_style .button:hover {
+      cursor: pointer;
+      border-left: 1px solid #fbdc74;
+      border-right: 1px solid #fbdc74; }
+    #about .font_style .italic p {
+      font-family: "dotsItalic";
+      color: #5e5d5d; }
+    #about .font_style .active {
+      border-left: 1px solid #fbdc74;
+      border-right: 1px solid #fbdc74; }
+      #about .font_style .active p {
+        color: #fbdc74; }
+  #about #about_letters_item {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    #about #about_letters_item #letters {
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      position: relative;
+      width: 600px; }
+      #about #about_letters_item #letters .uppercase {
+        text-transform: uppercase; }
+      #about #about_letters_item #letters .single_letter {
+        display: inline;
+        position: relative; }
+      #about #about_letters_item #letters .uppercase::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 250%;
+        width: 1px;
+        background-color: #5e5d5d; }
+      #about #about_letters_item #letters .uppercase::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 250%;
+        width: 1px;
+        background-color: #5e5d5d; }
+      #about #about_letters_item #letters .minuscule::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 120%;
+        width: 1px;
+        background-color: #5e5d5d; }
+      #about #about_letters_item #letters .minuscule::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 120%;
+        width: 1px;
+        background-color: #5e5d5d; }
+    #about #about_letters_item .italic p {
+      font-family: "dotsItalic"; }
+  #about #about_example {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    margin: 100px 0%;
+    width: 100%; }
+    #about #about_example .example_item {
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      border-left: 1px solid #5e5d5d;
+      border-right: 1px solid #5e5d5d; }
+      #about #about_example .example_item .example-left p {
+        margin: 5px;
+        color: #5e5d5d;
+        display: block; }
+      #about #about_example .example_item .example-right p {
+        margin: 5px 10px;
+        color: white; }
+      #about #about_example .example_item .example-right .tab {
+        margin-left: 30px; }
+  #about #about_from_author {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px; }
+    #about #about_from_author p {
+      font-size: 1.2vw;
+      line-height: 1.7;
+      width: 600px;
+      text-align: left; }
+  #about #about_write {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; }
+    #about #about_write textarea {
+      width: 600px;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #5e5d5d;
+      border-top: 1px solid #5e5d5d;
+      background-color: #141414;
+      font-family: "dotsRegular";
+      color: white;
+      font-size: 15px;
+      padding: 20px;
+      outline: none;
+      transition: 300ms linear;
+      -webkit-transition: 300ms linear; }
+    #about #about_write textarea:focus {
+      border-top: 1px solid #fbdc74;
+      border-bottom: 1px solid #fbdc74; }
+  #about #about_diacritics {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    font-size: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh; }
+    #about #about_diacritics p {
+      width: 600px;
+      text-align: left;
+      margin-top: 40px; }
+
+@media (max-width: 1024px) {
+  #about .abouth2 {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    margin: 2vh 50px 50px 10vw;
+    margin-left: 50px; }
+  #about #aboutp {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 50px 50px 10vw;
+    margin: 2vh 50px 50px 10vw; }
+    #about #aboutp p {
+      width: 600px;
+      text-align: left; }
+  #about .font_style .button {
+    font-size: 12px; }
+  #about #about_letters_item #letters {
+    font-size: 26px;
+    width: 400px; }
+  #about #about_example {
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto; }
+    #about #about_example .example_item {
+      width: 400px; }
+  #about #about_from_author {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    margin: 2vh 50px 50px 10vw; }
+    #about #about_from_author p {
+      font-size: 3vw;
+      line-height: 2; }
+  #about #about_write textarea {
+    width: 400px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px; }
+  #about #about_diacritics {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    font-size: 25px; }
+    #about #about_diacritics p {
+      width: 400px;
+      margin-top: 40px; } }
+@media (max-width: 600px) {
+  #about .abouth2 {
+    font-size: 15px; }
+  #about #aboutp {
+    font-size: 15px; }
+  #about .font_style .button {
+    font-size: 15px; }
+  #about #about_letters_item #letters {
+    font-size: 22px;
+    width: 200px; }
+  #about #about_example {
+    font-size: 8px; }
+    #about #about_example .example_item {
+      width: 200px; }
+  #about #about_from_author {
+    font-size: 15px; }
+    #about #about_from_author p {
+      font-size: 15px; }
+  #about #about_write textarea {
+    width: 200px;
+    font-size: 15px; }
+  #about #about_diacritics {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    font-size: 15px; }
+    #about #about_diacritics p {
+      width: 200px;
+      margin-top: 40px; } }
+@font-face {
+  font-family: "dotsRegular";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-regular.otf") format("truetype"), url("../font/Fridaymono-regular.woff") format("woff"), url("../font/Fridaymono-regular.woff2") format("woff2"), url("../font/Fridaymono-regular.eot") format("embedded-opentype"); }
+@font-face {
+  font-family: "dotsItalic";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-italic.woff2") format("woff2"), url("../font/Fridaymono-italic.eot") format("embedded-opentype"); }
+@keyframes left {
+  0% {
+    left: -130px; }
+  100% {
+    left: 20px; } }
+#project {
+  margin: 0;
+  padding: 0px;
+  color: white; }
+  #project .project2 {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    margin: 2vh 50px 50px 15vw;
+    margin-left: 150px; }
+  #project #project_from_author {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 50px 50px 15vw;
+    margin: 2vh 0px 100px 0px; }
+    #project #project_from_author p {
+      width: 600px;
+      text-align: left; }
+    #project #project_from_author p {
+      font-size: 1.2vw;
+      line-height: 1.7; }
+  #project #project_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #project #project_section .project_class {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0px;
+      width: 600px; }
+      #project #project_section .project_class .project_left {
+        width: 48%;
+        line-height: 1.5; }
+        #project #project_section .project_class .project_left .h2project {
+          font-size: 20px;
+          margin: 20px 0px; }
+        #project #project_section .project_class .project_left .pproject {
+          font-size: 12px; }
+        #project #project_section .project_class .project_left .line_left_project {
+          height: 100px;
+          width: 1px;
+          background-color: #5e5d5d;
+          left: 0px;
+          margin: 2vh 0px 0px 0px; }
+      #project #project_section .project_class .project_right {
+        width: 48%;
+        text-align: right; }
+        #project #project_section .project_class .project_right .project_letter {
+          font-size: 160px;
+          margin: 0;
+          display: inline;
+          padding: 7px 0px; }
+    #project #project_section .project_class2 {
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      width: 600px; }
+      #project #project_section .project_class2 .pproject {
+        font-size: 12px;
+        line-height: 1.5; }
+      #project #project_section .project_class2 .line_left_project {
+        height: 100px;
+        width: 1px;
+        background-color: #5e5d5d;
+        left: 0px;
+        margin: 2vh 0px 0px 0px; }
+      #project #project_section .project_class2 .letters_horizontal {
+        width: 600px;
+        justify-content: left; }
+        #project #project_section .project_class2 .letters_horizontal .project_letter {
+          font-size: 160px;
+          width: 600px;
+          margin: 0;
+          display: block;
+          padding: 7px 0px;
+          position: relative;
+          text-align: left; }
+        #project #project_section .project_class2 .letters_horizontal .let03::before {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px dashed #fbdc74;
+          left: 0;
+          opacity: 0.6;
+          bottom: 76px; }
+        #project #project_section .project_class2 .letters_horizontal .let03::after {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px dashed #fbdc74;
+          left: 0;
+          opacity: 0.6;
+          bottom: 106px; }
+        #project #project_section .project_class2 .letters_horizontal .let04::before {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px dashed #fbdc74;
+          left: 0;
+          opacity: 0.6;
+          bottom: 55px; }
+        #project #project_section .project_class2 .letters_horizontal .let04::after {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px dashed #fbdc74;
+          left: 0;
+          opacity: 0.6;
+          bottom: 144px; }
+        #project #project_section .project_class2 .letters_horizontal .let08::before {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px dashed #fbdc74;
+          left: 0;
+          opacity: 0.6;
+          bottom: 55px; }
+        #project #project_section .project_class2 .letters_horizontal .let08::after {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px dashed #fbdc74;
+          left: 0;
+          opacity: 0.6;
+          bottom: 173px; }
+
+@media (max-width: 1024px) {
+  #project .project2 {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    margin-left: 50px; }
+  #project #project_from_author {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 50px 50px 10vw; }
+    #project #project_from_author p {
+      width: 600px;
+      text-align: left; }
+    #project #project_from_author p {
+      font-size: 3vw;
+      line-height: 1.7; }
+  #project #project_section .project_class {
+    width: 400px; }
+    #project #project_section .project_class .project_left .h2project {
+      font-size: 15px;
+      margin: 10px 0px; }
+    #project #project_section .project_class .project_left .pproject {
+      font-size: 12px; }
+    #project #project_section .project_class .project_right .project_letter {
+      font-size: 100px; }
+  #project #project_section .project_class2 {
+    width: 400px; }
+    #project #project_section .project_class2 .letters_horizontal {
+      width: 400px; }
+      #project #project_section .project_class2 .letters_horizontal .project_letter {
+        font-size: 100px;
+        width: 400px; }
+      #project #project_section .project_class2 .letters_horizontal .let03::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 50px; }
+      #project #project_section .project_class2 .letters_horizontal .let03::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 69px; }
+      #project #project_section .project_class2 .letters_horizontal .let04::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 37px; }
+      #project #project_section .project_class2 .letters_horizontal .let04::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 92px; }
+      #project #project_section .project_class2 .letters_horizontal .let08::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 37px; }
+      #project #project_section .project_class2 .letters_horizontal .let08::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 112px; } }
+@media (max-width: 600px) {
+  #project .project2 {
+    font-size: 15px; }
+  #project #project_from_author {
+    font-size: 15px; }
+    #project #project_from_author p {
+      font-size: 15px; }
+  #project #project_section .project_class {
+    width: 200px; }
+    #project #project_section .project_class .project_left .h2project {
+      font-size: 15px;
+      margin: 10px 0px; }
+    #project #project_section .project_class .project_left .pproject {
+      font-size: 12px; }
+    #project #project_section .project_class .project_right .project_letter {
+      font-size: 50px; }
+  #project #project_section .project_class2 {
+    width: 200px; }
+    #project #project_section .project_class2 .letters_horizontal {
+      width: 200px; }
+      #project #project_section .project_class2 .letters_horizontal .project_letter {
+        font-size: 50px;
+        width: 200px; }
+      #project #project_section .project_class2 .letters_horizontal .let03::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 22px; }
+      #project #project_section .project_class2 .letters_horizontal .let03::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 39px; }
+      #project #project_section .project_class2 .letters_horizontal .let04::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 23px; }
+      #project #project_section .project_class2 .letters_horizontal .let04::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 51px; }
+      #project #project_section .project_class2 .letters_horizontal .let08::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 22px; }
+      #project #project_section .project_class2 .letters_horizontal .let08::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px dashed #fbdc74;
+        left: 0;
+        opacity: 0.6;
+        bottom: 61px; } }
+@font-face {
+  font-family: "dotsRegular";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-regular.otf") format("truetype"), url("../font/Fridaymono-regular.woff") format("woff"), url("../font/Fridaymono-regular.woff2") format("woff2"), url("../font/Fridaymono-regular.eot") format("embedded-opentype"); }
+@font-face {
+  font-family: "dotsItalic";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-italic.woff2") format("woff2"), url("../font/Fridaymono-italic.eot") format("embedded-opentype"); }
+@keyframes left {
+  0% {
+    left: -130px; }
+  100% {
+    left: 20px; } }
+#nav_left {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 50px;
+  top: 0;
+  z-index: 10;
+  height: 100vh; }
+  #nav_left #left {
+    height: 100%; }
+    #nav_left #left nav {
+      height: 100%;
+      padding: 25vh 0px; }
+      #nav_left #left nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        #nav_left #left nav ul li {
+          position: relative; }
+          #nav_left #left nav ul li a {
+            color: #fbdc74;
+            text-decoration: none;
+            list-style: none;
+            text-transform: uppercase;
+            font-size: 11px;
+            transition: 200ms linear;
+            -webkit-transition: 200ms linear;
+            position: absolute;
+            animation: left 1s ease-in-out; }
+          #nav_left #left nav ul li a:hover {
+            color: white; }
+          #nav_left #left nav ul li span {
+            position: absolute;
+            color: #fbdc74;
+            font-size: 12px;
+            text-transform: uppercase;
+            left: 55px;
+            width: 85px;
+            opacity: 0;
+            transition: 200ms linear;
+            -webkit-transition: 200ms linear; }
+        #nav_left #left nav ul li:hover span {
+          opacity: 1; }
+  #nav_left #line {
+    height: 100%;
+    background-color: #fbdc74;
+    position: absolute;
+    right: 0px;
+    top: 6vh;
+    width: 1px; }
+
+@font-face {
+  font-family: "dotsRegular";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-regular.otf") format("truetype"), url("../font/Fridaymono-regular.woff") format("woff"), url("../font/Fridaymono-regular.woff2") format("woff2"), url("../font/Fridaymono-regular.eot") format("embedded-opentype"); }
+@font-face {
+  font-family: "dotsItalic";
+  src: url("../font/Fridaymono-italic.eot");
+  src: url("../font/Fridaymono-italic.woff2") format("woff2"), url("../font/Fridaymono-italic.eot") format("embedded-opentype"); }
+@keyframes left {
+  0% {
+    left: -130px; }
+  100% {
+    left: 20px; } }
+#install {
+  margin: 0;
+  padding: 0px;
+  color: white; }
+  #install .install2 {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    margin: 2vh 50px 2vw 15vw;
+    margin-left: 150px; }
+  #install .license_div {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 50px 50px 15vw;
+    margin: 2vh 0px 2vw 0vw;
+    margin-left: 150px;
+    position: relative;
+    justify-content: left;
+    padding-left: 50px;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 50px; }
+    #install .license_div p {
+      width: 600px;
+      text-align: left; }
+    #install .license_div p {
+      padding-top: 50px;
+      font-size: 1.2vw;
+      line-height: 1.7; }
+  #install .license_div::after {
+    content: '';
+    width: 1px;
+    background-color: #5e5d5d;
+    height: 100%;
+    position: absolute;
+    left: 0px; }
+  #install .install_div {
+    font-family: "dotsRegular";
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 50px 50px 15vw;
+    margin: 2vh 0px 0px 0px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px; }
+    #install .install_div p {
+      width: 600px;
+      text-align: left; }
+    #install .install_div .install_font_install {
+      width: 600px;
+      text-align: left;
+      padding-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 1vw; }
+    #install .install_div .download_font_install {
+      font-size: 2vw;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      width: 600px;
+      text-align: left;
+      padding: 20px 0px; }
+      #install .install_div .download_font_install a {
+        text-decoration: none;
+        color: white;
+        border-top: 1px solid #5e5d5d;
+        border-bottom: 1px solid #5e5d5d;
+        width: 600px;
+        display: block;
+        padding: 20px 0px;
+        transition: 200ms linear;
+        -webkit-transition: 200ms linear; }
+      #install .install_div .download_font_install a:hover {
+        border-bottom: 1px solid #fbdc74;
+        border-top: 1px solid #fbdc74; }
+    #install .install_div .system_install {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 600px; }
+      #install .install_div .system_install .left_install {
+        width: 30%; }
+      #install .install_div .system_install .right_install {
+        width: 67%; }
+      #install .install_div .system_install p {
+        text-transform: uppercase;
+        font-size: 1vw;
+        padding-bottom: 30px; }
+    #install .install_div .after_div {
+      position: relative;
+      margin-bottom: 45px; }
+    #install .install_div .after_div::after {
+      content: '';
+      height: 1px;
+      width: 600px;
+      position: absolute;
+      bottom: 0px;
+      background-color: #5e5d5d; }
+
+@media (max-width: 1024px) {
+  #install .install2 {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    margin: 2vh 50px 2vw 10vw;
+    margin-left: 50px; }
+  #install .license_div {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 50px 50px 10vw;
+    margin-left: 50px;
+    padding-left: 15px;
+    width: 400px; }
+    #install .license_div p {
+      width: 600px;
+      text-align: left; }
+    #install .license_div p {
+      padding-top: 50px;
+      font-size: 3vw;
+      line-height: 2;
+      width: 400px; }
+  #install .license_div::after {
+    height: 90%; }
+  #install .install_div {
+    font-family: "dotsRegular";
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 50px 50px 10vw; }
+    #install .install_div p {
+      width: 600px;
+      text-align: left; }
+    #install .install_div .install_font_install {
+      width: 400px;
+      font-size: 3vw; }
+    #install .install_div .download_font_install {
+      font-size: 4vw;
+      width: 400px; }
+      #install .install_div .download_font_install a {
+        width: 400px; }
+    #install .install_div .system_install {
+      width: 400px; }
+      #install .install_div .system_install .left_install {
+        width: 30%; }
+      #install .install_div .system_install .right_install {
+        width: 67%; }
+      #install .install_div .system_install p {
+        font-size: 3vw; }
+    #install .install_div .after_div::after {
+      width: 400px; } }
+@media (max-width: 600px) {
+  #install .install2 {
+    font-size: 15px; }
+  #install .license_div {
+    width: 200px;
+    font-size: 15px; }
+    #install .license_div p {
+      width: 200px;
+      font-size: 15px; }
+  #install .license_div::after {
+    height: 90%; }
+  #install .install_div .install_font_install {
+    width: 200px;
+    font-size: 3vw; }
+  #install .install_div .download_font_install {
+    font-size: 4vw;
+    width: 200px; }
+    #install .install_div .download_font_install a {
+      width: 200px; }
+  #install .install_div .system_install {
+    width: 200px; }
+    #install .install_div .system_install p {
+      font-size: 3vw; }
+  #install .install_div .after_div::after {
+    width: 200px; } }
+* {
+  box-sizing: border-box;
+  font-family: "dotsRegular";
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0px;
+  background-color: #141414;
+  position: relative; }
+  body #section_right {
+    margin-left: 50px; }
+
+h1 {
+  margin: 0; }
+
+.opacity_fridayp {
+  opacity: 0; }
+
+.line_sections {
+  height: 45vh;
+  width: 1px;
+  background-color: #5e5d5d;
+  left: 0px;
+  margin: 2vh 0px 0px 150px; }
+
+.line_left {
+  height: 5vh;
+  width: 1px;
+  background-color: #5e5d5d;
+  left: 0px;
+  margin: 0;
+  margin-left: 150px; }
+
+.italic {
+  font-family: "dotsItalic"; }
+
+.span_install {
+  text-transform: none;
+  font-size: 1.5vw; }
+
+#footer {
+  background-color: #141414;
+  color: #5e5d5d;
+  padding: 15px 15vw; }
+  #footer p {
+    font-size: 10px;
+    font-family: "dotsRegular";
+    text-align: left; }
+
+::-webkit-scrollbar {
+  width: 6px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0f1e20; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(251, 220, 116, 0.6); }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fbdc74; }
+
+@media (max-width: 1024px) {
+  .line_left {
+    margin-left: 50px; }
+
+  .line_sections {
+    height: 25vh;
+    width: 1px;
+    background-color: #5e5d5d;
+    left: 0px;
+    margin: 2vh 0px 0px 50px; } }
+
+/*# sourceMappingURL=style.css.map */
